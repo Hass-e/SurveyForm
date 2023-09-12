@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey form</h1>
+    <p id="description">Example survey to analize base data</p>
+    <form id="survey-form">
+      <label id="name-label">Enter your name: <input id="name" type="text" placeholder="Juan Perez" required/></label>
+      <label id="email-label">Enter your email: <input id="email" type="email" placeholder="ejemplo@email.com" required/></label>
+      <label id="number-label">Enter your age: <input id="number" type="number" min="18" max="99" placeholder="18"/></label>
+      <fieldset>
+        <label>Select your preferred option</label>
+        <select id="dropdown">
+          /*<option value="">(Select one option)</option>*/
+          <option value="1">Dogs</option>
+          <option value="2">Cats</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label>Green: <input type="radio" name="options" value="radio"/></label>
+        <label>Blue: <input type="radio" name="options" value="radio"/></label>
+      </fieldset>
+      <fieldset>
+        <label>Check if you are cool: <input type="checkbox" name="chckbx" value="checked"/></label><br>
+        <label>Check if you want money <input type="checkbox" name="chckbx" value="checked"/></label>
+      </fieldset>
+      <textarea id="bio" name="bio" rows="3" cols="60" placeholder="I can type in here whatever I want..."></textarea>
+      <input type="submit" id="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
